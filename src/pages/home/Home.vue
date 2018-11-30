@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div>home</div>
-    <router-link to = "/">跳转lust</router-link>
+    hello world
+    <!-- <router-link to = "/"></router-link> -->
   </div>
 </template>
 <script>
