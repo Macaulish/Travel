@@ -23,7 +23,7 @@ export default {
       },
       swiperList: [{
         id: '0001',
-        imgUrl: 'http://img4.imgtn.bdimg.com/it/u=2310514390,3580363630&fm=26&gp=0.jpg'
+        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/7c/8e5c4ab8ee8b7402.jpg_750x200_dd7a38dd.jpg'
       },
       {
         id: '0002',
@@ -36,7 +36,7 @@ export default {
   mounted () {
     // current swiper instance
     // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
-    console.log('this is current swiper instance object', this.swiper)
+    // console.log('this is current swiper instance object', this.swiper)
     // this.swiper.slideTo(3, 1000, false)
   }
 }
