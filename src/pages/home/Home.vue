@@ -1,12 +1,15 @@
 <template>
   <div>
-    hello world
-    <!-- <router-link to = "/"></router-link> -->
+    <home-header></home-header>
   </div>
 </template>
 <script>
+import HomeHeader from './components/Header'
 export default{
-  name: 'home'
+  name: 'home',
+  components: {
+    HomeHeader
+  }
 }
 </script>
 
