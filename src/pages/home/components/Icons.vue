@@ -6,7 +6,7 @@
           <div class="icon-img">
             <img class="icon-img-content" :src="item.imgUrl" alt="">
           </div>
-          <p class="icon-desc">wwwwdddddddddddddddd</p>
+          <p class="icon-desc">{{item.desc}}</p>
         </div>
       </div>
     </swiper-slide>
@@ -17,45 +17,20 @@
 <script>
 export default {
   name: 'homeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
         pagination: '.swiper-pagination'
-      },
-      iconList: [{
-        id: '001',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-      }, {
-        id: '002',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-      }, {
-        id: '003',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-      }, {
-        id: '004',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-      }, {
-        id: '005',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-      }, {
-        id: '006',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-      }, {
-        id: '007',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-      }, {
-        id: '008',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-      }, {
-        id: '009',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png'
-      }]
+      }
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []

@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <!-- <div class="item-img-wrapper"> -->
         <img class="item-img" :src="item.imgUrl" alt="">
         <!-- </div> -->
@@ -18,29 +18,11 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '001',
-        title: 'title',
-        imgUrl: 'http://img1.qunarzz.com/sight/p39/201211/00/86d1e4c007f206c493835fbb.jpg_200x200_e5841767.jpg',
-        desc: 'desc'
-      }, {
-        id: '002',
-        title: 'title',
-        imgUrl: 'http://img1.qunarzz.com/sight/p39/201211/00/86d1e4c007f206c493835fbb.jpg_200x200_e5841767.jpg',
-        desc: 'desc'
-      }, {
-        id: '003',
-        title: 'title',
-        imgUrl: 'http://img1.qunarzz.com/sight/p39/201211/00/86d1e4c007f206c493835fbb.jpg_200x200_e5841767.jpg',
-        desc: 'desc'
-      }, {
-        id: '004',
-        title: 'title',
-        imgUrl: 'http://img1.qunarzz.com/sight/p39/201211/00/86d1e4c007f206c493835fbb.jpg_200x200_e5841767.jpg',
-        desc: 'desc'
-      }]
     }
   }
 }

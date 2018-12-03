@@ -7,13 +7,16 @@
       <div class = "iconfont">&#xe632;输入城市/景点/游玩主题</div>
     </div>
     <div class="header-right">
-      <div class = "iconfont arrow-icon">城市&#xe62d;</div>
+      <div class = "iconfont arrow-icon">{{city}}&#xe62d;</div>
     </div>
   </div>
 </template>
 <script>
 export default{
-  name: 'homeHeader'
+  name: 'homeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 
