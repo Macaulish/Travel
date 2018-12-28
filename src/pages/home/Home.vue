@@ -14,7 +14,8 @@ import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
 import axios from 'axios'
-export default{
+
+export default {
   name: 'home',
   components: {
     HomeHeader,
