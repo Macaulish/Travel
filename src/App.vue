@@ -10,5 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus" scoped>
+body
+  touch-action: none
 </style>
