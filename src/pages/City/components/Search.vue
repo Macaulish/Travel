@@ -1,8 +1,16 @@
 <template>
-	<div class="search">
-		<input type="text" class="search-input" placeholder="输入城市名或拼音">
-		<!--<i class = "iconfont search-icon">&#xe632;</i>-->
-	</div>
+    <div>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="输入城市名或拼音">
+            <!--<i class = "iconfont search-icon">&#xe632;</i>-->
+        </div>
+        <!--<div class="search-content">-->
+            <!--<ul>-->
+                <!--<li>123</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    </div>
+
 </template>
 <script>
 export default {
@@ -24,4 +32,11 @@ export default {
 			text-align: center
 			border-radius: .1rem
 			color: #666
+    /*.search-content*/
+        /*position: absolute*/
+        /*top: 1.58rem*/
+        /*left: 0*/
+        /*right: 0*/
+        /*bottom: 0*/
+        /*backgrouond: green*/
 </style>
