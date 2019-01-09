@@ -7,5 +7,5 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state,
-  mutations: mutations // 键值都一样 就可以写一个
+  mutations: mutations // 键值都一样 就可以写一个 跟上面state项一样
 })
