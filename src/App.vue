@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <keep-alive>
       <router-view/>
     </keep-alive>
