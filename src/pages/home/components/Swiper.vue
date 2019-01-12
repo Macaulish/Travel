@@ -1,5 +1,5 @@
 <template>
-  <div class = "wrapper">
+  <div id="wrapper">
     <swiper :options="swiperOption" v-if="showSwiper">
       <!-- slides -->
       <swiper-slide v-for="item of list" :key="item.id">
@@ -37,9 +37,9 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-  .wrapper >>> .swiper-pagination-bullet-active
+  #wrapper >>> .swiper-pagination-bullet-active
     background:red !important
-  .wrapper
+  #wrapper
     overflow:hidden
     width:100%
     height:0
