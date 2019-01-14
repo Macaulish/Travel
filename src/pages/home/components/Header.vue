@@ -6,11 +6,11 @@
     <div class="header-input">
       <div class = "iconfont">&#xe632;输入城市/景点/游玩主题</div>
     </div>
-		<router-link to="/city">
-			<div class="header-right">
-				<div class = "iconfont arrow-icon">{{this.city}}&#xe62d;</div>
-			</div>
-		</router-link>
+    <router-link to="/city">
+      <div class="header-right">
+        <div class = "iconfont arrow-icon">{{this.city}}&#xe62d;</div>
+      </div>
+    </router-link>
   </div>
 </template>
 <script>

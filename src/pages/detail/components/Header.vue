@@ -1,17 +1,17 @@
 <template>
-	<div>
-		<router-link tag="div" to="/" class="header-abs" v-show="showAbs">
-				<i class = "iconfont header-abs-back">&#xe624;</i>
-		</router-link>
-		<div class="header-fixed" v-show="!showAbs" :style="opacityStyle">
-			<router-link tag="div" to="/" class="header-fixed-back">
-				<div class = "iconfont back-icon">&#xe624;</div>
-			</router-link>
-			<div class="header-fixed-title">
-				经典详情
-			</div>
-		</div>
-	</div>
+  <div>
+    <router-link tag="div" to="/" class="header-abs" v-show="showAbs">
+        <i class = "iconfont header-abs-back">&#xe624;</i>
+    </router-link>
+    <div class="header-fixed" v-show="!showAbs" :style="opacityStyle">
+      <router-link tag="div" to="/" class="header-fixed-back">
+        <div class = "iconfont back-icon">&#xe624;</div>
+      </router-link>
+      <div class="header-fixed-title">
+        经典详情
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 export default {

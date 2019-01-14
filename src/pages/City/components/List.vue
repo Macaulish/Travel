@@ -1,17 +1,17 @@
 <template>
-	<div class="list" ref="wrapper">
-		<div class="content">
-			<div class="area">
-				<div class="title border-topbottom">当前城市</div>
-				<div class="button-list">
-					<div class="button-wrapper">
-						<div class="button">{{ this.currentCity }}</div>
-					</div>
-				</div>
-			</div>
-			<div class="area">
-				<div class="title border-topbottom">热门城市</div>
-				<div class="button-list">
+  <div class="list" ref="wrapper">
+    <div class="content">
+      <div class="area">
+        <div class="title border-topbottom">当前城市</div>
+        <div class="button-list">
+          <div class="button-wrapper">
+            <div class="button">{{ this.currentCity }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="area">
+        <div class="title border-topbottom">热门城市</div>
+        <div class="button-list">
                     <div
                         class="button-wrapper"
                         v-for="item of hotCities"
@@ -20,26 +20,26 @@
                     >
                         <div class="button"> {{ item.name }} </div>
                     </div>
-				</div>
-			</div>
-			<div
+        </div>
+      </div>
+      <div
               class="area"
               v-for="(value,alphabet) of cities"
               :key="alphabet"
               :ref="alphabet"
             >
-				<div class="title border-topbottom">{{alphabet}}</div>
-				<ul class="item-list" v-for="item of value" :key="item.id">
-					<li
+        <div class="title border-topbottom">{{alphabet}}</div>
+        <ul class="item-list" v-for="item of value" :key="item.id">
+          <li
                         class="item border-bottom"
                         @click="handleCityClick(item.name)"
                     >
                         {{item.name}}
                     </li>
-				</ul>
-			</div>
-		</div>
-	</div>
+        </ul>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 import BScroll from 'better-scroll'

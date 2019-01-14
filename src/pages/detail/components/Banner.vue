@@ -1,13 +1,13 @@
 <template>
     <div>
         <div class="banner" @click="handleBannerClick">
-            <img class="banner-img" src="http://img1.qunarzz.com/sight/p0/1712/95/95f38f28a6ff19cba3.img.jpg_600x330_682f736a.jpg" alt="">
+            <img class="banner-img" :src="bannerImg" alt="">
             <div class="banner-info">
-                <div class="banner-tittle">谁傲雪世界谁傲雪世界谁傲雪世界傲雪世界傲雪世界傲雪世界</div>
-                <div class="banner-number"><i class = "iconfont">&#xe62d;</i>32</div>
+                <div class="banner-tittle">{{ sightName }}</div>
+                <div class="banner-number"><i class = "iconfont">&#xe62d;</i>{{this.bannerImg.length}}</div>
             </div>
         </div>
-        <common-gallary @close="handleGallaryColse" :imgs="imgs" v-show="showGallary"></common-gallary>
+        <common-gallary @close="handleGallaryColse" :imgs="gallaryImgs" v-show="showGallary"></common-gallary>
     </div>
 </template>
 <script>
@@ -17,9 +17,13 @@ export default {
   components: {
     CommonGallary
   },
+  props: {
+    sightName: String,
+    bannerImg: String,
+    gallaryImgs: Array
+  },
   data () {
     return {
-      imgs: ['http://img5.imgtn.bdimg.com/it/u=2230167403,4188800858&fm=26&gp=0.jpg', 'http://www.pptbz.com/pptpic/UploadFiles_6909/201211/2012111719294197.jpg'],
       showGallary: false
     }
   },
