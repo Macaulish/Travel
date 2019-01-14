@@ -29,7 +29,6 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      // console.log(this.$route.params.id)
       axios.get('/api/detail.json?id=' + this.$route.params.id)
         .then(this.getDetailInfoSucc)
     },
@@ -37,7 +36,6 @@ export default {
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
-        // console.log(data)
         this.sightName = data.sightName
         this.bannerImg = data.bannerImg
         this.gallaryImgs = data.gallaryImgs
