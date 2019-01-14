@@ -46,33 +46,34 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-	@import '~styles/varibles.styl'
-	.header-abs
-		position: absolute
-		top: .2rem
-		left: .2rem
-		width: .8rem
-		height: .8rem
-		border-radius: .4rem
-		background: bisque
-		display: flex
-		justify-content: center
-		align-items: center
-		.header-abs-back
-			font-size: .4rem
-			color: blue
-	.header-fixed
-		position: fixed
-		text-align: center
-		top: 0
-		left: 0
-		right: 0
-		background:$bgColor
-		line-height:$headerHeight
-		.header-fixed-back
-			float: left
-			width:.64rem
-			.back-icon
-				font-size:.4rem
-				text-align:center
+  @import '~styles/varibles.styl'
+  .header-abs
+    position: absolute
+    top: .2rem
+    left: .2rem
+    width: .8rem
+    height: .8rem
+    border-radius: .4rem
+    background: bisque
+    display: flex
+    justify-content: center
+    align-items: center
+    .header-abs-back
+      font-size: .4rem
+      color: blue
+  .header-fixed
+    z-index: 2
+    position: fixed
+    text-align: center
+    top: 0
+    left: 0
+    right: 0
+    background:$bgColor
+    line-height:$headerHeight
+    .header-fixed-back
+      float: left
+      width:.64rem
+      .back-icon
+        font-size:.4rem
+        text-align:center
 </style>

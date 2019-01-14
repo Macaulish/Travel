@@ -49,13 +49,13 @@ export default {
     display: flex
     justify-content: center
     align-items: center
-    position: absolute
-    z-index: 999
+    position: fixed
+    z-index: 9999
     top: 0
     left: 0
     right: 0
     bottom: 0
-    background: #0000008c
+    background: #333
     .gallary-img
       width: 100%
     .swiper-pagination

@@ -23,3 +23,4 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+// .$mount('#app')	这也是一种挂载方式
