@@ -29,7 +29,11 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      axios.get('/api/detail.json?id=' + this.$route.params.id)
+      axios.get('/api/detail.json?id=', {
+        params: {
+          id: this.$route.params.id
+        }
+      })
         .then(this.getDetailInfoSucc)
     },
     getDetailInfoSucc (res) {
@@ -46,9 +50,6 @@ export default {
   mounted () {
     this.getDetailInfo()
   }
-  // activated () {
-  //   this.getDetailInfo()
-  // }
 }
 </script>
 <style lang="stylus" scoped>
