@@ -16,6 +16,12 @@ module.exports = {
             pathRewrite: {
                 '^/api': '/static/mock'
             }
+        },
+        '/testcors': {
+          target: 'http://ks.qdexam.com:3200',
+          pathRewrite: {
+            '^/testcors': '/dept/deptTree'
+          }
         }
     },
 
