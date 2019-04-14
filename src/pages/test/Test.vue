@@ -21,7 +21,7 @@
     </el-table>
     <div>
       <hr>
-      <p style="font-family:'PingFang SC';font-size:20px;">sdfdsdsf发生发生大</p>
+      <p style="font-family:'PingFang SC';font-size:20px;">{{ testData }}</p>
     </div>
   </div>
 </template>
@@ -47,7 +47,13 @@ export default {
         date: '2016-05-03',
         name: '王小虎',
         address: '上海市普陀区金沙江路 1516 弄'
-      }]
+      }],
+      testData: {
+        one: {
+          one_1: 'one_1',
+          one_2: 'one_112'
+        }
+      }
     }
   },
   mounted () {

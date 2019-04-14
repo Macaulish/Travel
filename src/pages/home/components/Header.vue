@@ -2,6 +2,7 @@
   <div class="header">
     <div class="header-left">
       <!--<div class = "iconfont back-icon">&#xe624;</div>-->
+      <router-link to="/test" style="color:blue;">跳转</router-link>
     </div>
     <div class="header-input">
       <div class = "iconfont">&#xe632;输入城市/景点/游玩主题</div>
